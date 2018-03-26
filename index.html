@@ -20,6 +20,16 @@
       link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
       document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
+
+    <style>
+      .multicolumn {
+        display: flex;
+      }
+
+      .column {
+        flex: 1;
+      }
+    </style>
   </head>
   <body>
     <div class="reveal">
@@ -27,6 +37,8 @@
         <section data-markdown>
           <script type="text/template">
             # eXtreme Programming
+
+            IES Santiago Hernández - 2018
           </script>
         </section>
 
@@ -74,123 +86,137 @@
           </script>
         </section>
 
-        <section data-markdown data-background-image="img/labyrinth.jpg">
-        </section>
-
-        <section data-markdown data-background-image="img/labyrinth_riddle.jpg">
-        </section>
-
-        <section data-markdown data-background-image="img/labyrinth_helping_hands.jpg">
-        </section>
-
-        <section data-markdown>
-          ### Aporta una solución
-          ### Estructura tu aplicación
-        </section>
-
-        <section data-markdown data-background-image="img/labyrinth_baby.jpg">
-        </section>
-
-        <section data-markdown>
-          ## Dependencia total y absoluta
-        </section>
-
-        <section data-markdown>
-          ![Nuevo framework](img/new_framework.jpg)
-        </section>
-
         <section data-markdown>
           <script type="text/template">
-            ## Una arquitectura debe permitirnos:
-
-            ### Hacer que el sistema evolucione con las nuevas necesidades
-            ### Postponer decisiones
-            ### Aplicar diferentes soluciones técnicas
-          </script>
-        </section>
-
-        <section data-markdown data-background-image="img/iron_man_blueprint.jpg">
-        </section>
-
-        <section data-markdown data-background-image="img/database.jpg" data-background-size="contain">
-        </section>
-
-        <section data-markdown data-background-image="img/batmobile_blueprint.jpg" data-background-size="contain">
-        </section>
-
-        <section data-markdown>
-          # ¿Por dónde empiezo?
-        </section>
-
-        <section data-markdown data-background-image="img/all_together.png">
-        </section>
-
-        <section data-markdown>
-          ![Vete a la mierda hombre](img/vete_a_la_mierda.gif)
-        </section>
-
-        <section data-markdown data-background-image="img/all_together.png">
-        </section>
-
-        <section data-markdown>
-          # Go Live!
-
-          ## Servicios de Aplicación
-        </section>
-
-        <section data-markdown>
-          # ¿Y lo CQRS?
-        </section>
-
-        <section data-markdown data-background-image="img/supermaño.jpg" data-background-size="contain">
-        </section>
-
-        <section data-markdown>
-          # Go Live!
-
-          ## Eventos
-        </section>
-
-        <section data-markdown>
-          # ¿Y lo Event Sourcing?
-        </section>
-
-        <section data-markdown data-background-image="img/supermaño.jpg" data-background-size="contain">
-        </section>
-
-        <section data-markdown>
-          # Go Live!
-
-          ## PubSub + Redis | AMQP
-        </section>
-
-        <section data-markdown>
-          # Go Live!
-
-          ## GraphQL + Sinatra
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
-            # 3 ideas
-         </script>
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
-            ## Un framework no es la arquitectura de tu sistema
+            # El software cambia
           </script>
         </section>
 
         <section data-markdown>
           <script type="text/template">
-            ## No te pongas trampas
+            # Valores
+            # Principios
+            # Prácticas
           </script>
         </section>
 
         <section data-markdown>
           <script type="text/template">
-            ## Ruby no es sólo Rails
+            # Valores
+
+            * Comunicación
+            * Realimentación
+            * Simplicidad
+            * Coraje
+            * Respeto
+          </script>
+        </section>
+
+        <section>
+          <h1>Prácticas</h1>
+
+          <div class="multicolumn">
+            <div class="column">
+              <ul>
+                <li>Sentarse juntos</li>
+                <li>Equipo completo</li>
+                <li>Espacio de trabajo informativo</li>
+                <li>Trabajar con ganas</li>
+                <li>Pair programming</li>
+                <li>Historias</li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li>Ciclo semanal</li>
+                <li>Ciclo trimestral</li>
+                <li>Ganduleo</li>
+                <li>Build de 10 minutos</li>
+                <li>Integración continua</li>
+                <li>Los tests primero</li>
+                <li>Diseño incremental</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>Principios</h1>
+
+          <div class="multicolumn">
+            <div class="column">
+              <ul>
+                <li>Humanidad</li>
+                <li>Economía</li>
+                <li>Beneficio mutuo</li>
+                <li>Autosimilitud</li>
+                <li>Mejora</li>
+                <li>Diversidad</li>
+                <li>Introspección</li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <ul>
+                <li>Flujo</li>
+                <li>Oportunidad</li>
+                <li>Redundancia</li>
+                <li>Fallo</li>
+                <li>Calidad</li>
+                <li>Pasos pequeños</li>
+                <li>Responsabilidad aceptada</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h1>Prácticas II</h1>
+
+          <div class="multicolumn">
+            <div class="column">
+              <ul>
+                <li>Involucramiento real del cliente</li>
+                <li>Despliegue incremental</li>
+                <li>Continuidad del equipo</li>
+                <li>Reducir equipo</li>
+                <li>Análisis de causa raíz</li>
+                <li>Código compartido</li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul>
+                <li>Código y tests</li>
+                <li>Una única base de código</li>
+                <li>Deploy diario</li>
+                <li>Alcance negociado</li>
+                <li>Pago por uso</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            # Coding Dojo
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## El código tiene que tener tests
+            ## Sólo se discute con código por delante
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            # Kata Potter
+
+            ## Pair programming: Ping Pong
+            ## Test Driven Development
+
+            #### https://github.com/nestorsalceda/potter-kata-java
           </script>
         </section>
 
